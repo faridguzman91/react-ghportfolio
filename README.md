@@ -3,6 +3,8 @@
 gebruikt serviceWorkers.js voor offline browser features (inspect en zie cache)
 <br>
 https://developers.google.com/web/fundamentals/primers/service-workers
+<br>
+https://styled-components.com/docs/basics
 
 #dependencies die hiervoor nodig zijn:
 
