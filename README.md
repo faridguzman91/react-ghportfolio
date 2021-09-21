@@ -12,3 +12,5 @@
 
 om te starten typ in cli: yarn start / npm start
 om te builden: yarn build of npm build
+
+serve -s build
