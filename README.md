@@ -1,4 +1,4 @@
-#github portfoliov met herbruikbare react componenten
+#github portfolio met herbruikbare react componenten
 
 #dependencies die hiervoor nodig zijn:
 
