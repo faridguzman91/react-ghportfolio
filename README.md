@@ -1,4 +1,5 @@
 #github portfolio met herbruikbare react componenten
+<br>
 gebruikt serviceWorkers.js voor offline browser features (inspect en zie cache)
 <br>
 https://developers.google.com/web/fundamentals/primers/service-workers
