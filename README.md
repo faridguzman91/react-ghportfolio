@@ -8,7 +8,7 @@ https://styled-components.com/docs/basics
 
 #dependencies die hiervoor nodig zijn:
 
-* npm create react app
+* npm create react app of npx create-react-app
 <br>
 * yarn / npm
 <br>
