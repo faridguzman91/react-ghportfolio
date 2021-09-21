@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import logo from '../../GitHub-Mark-Light-64px.png';
+//import Link from '../components/link/link';
 
 const HeaderWrapper = styled.div`
   background-color: #282c34;
@@ -21,7 +22,7 @@ const Logo = styled.img`
 const Header = () => (
   <HeaderWrapper>
     <Logo src={logo} alt='logo' />
-    <h1>My Github Portfolio</h1>
+    <h1>mijn github portfolio</h1>
   </HeaderWrapper>
 );
 

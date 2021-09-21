@@ -23,7 +23,10 @@ class Profile extends Component {
     };
   }
 
-  async componentDidMount() {
+  //component mounten en renderen
+  //informatie fetchen vanuit github
+
+    async componentDidMount() {
     try {
       const profile = await fetch('https://api.github.com/users/octocat');
       const profileJSON = await profile.json();
@@ -31,6 +34,8 @@ class Profile extends Component {
       if (profileJSON) {
         const repositories = await fetch(profileJSON.repos_url);
         const repositoriesJSON = await repositories.json();
+
+        //setState false als data gefetcht wordt
 
         this.setState({
           data: profileJSON,
@@ -47,11 +52,17 @@ class Profile extends Component {
   }
 
   render() {
+
+    //array state
     const { data, loading, error, repositories } = this.state;
+
+    //bij foutmelding ga naar laadscherm
 
     if (loading || error) {
       return <div>{loading ? 'Loading...' : error}</div>;
     }
+    
+    //user informatie, naam, bedrijf etc.
 
     const items = [
       {
@@ -70,6 +81,11 @@ class Profile extends Component {
       label: repository.name,
       value: <Link url={repository.html_url} title='Github URL' />,
     }));
+
+    //const projects = repositories.map(repository => ({
+     /// label: repository.name,
+     // value: <Link url={repository.html_url} title='Github URL' />,
+   // }));
 
     return (
       <ProfileWrapper>
